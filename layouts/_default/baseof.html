@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body class="doodle">
+    {{- partial "header.html" . -}}
+    <div class="doodle-border">
+      <main>{{- block "main" . }}{{- end }}</main>
+    </div>
+    {{- partial "footer.html" . -}}
+  </body>
+</html>
