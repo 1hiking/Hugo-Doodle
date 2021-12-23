@@ -1,8 +1,13 @@
 <header>
+  <img
+    src="/svg/figure.svg"
+    alt="A drawing of a simple human figure"
+    style="border: none"
+  />
   <nav>
     <a href="{{ .Site.BaseURL }}">{{- .Site.Title }}</a>
     {{ range .Site.Menus.main.ByWeight}} {{ .Pre }}
-    <a href="{{- .URL }}" title="{{- .Title }}">{{- .Name -}}</a>{{ .Post }}
-    {{ end }}
+    <a href="{{- .URL }}" title="{{- .Title }}">{{- .Name -}}</a>{{ .Post }} {{
+    end }}
   </nav>
 </header>

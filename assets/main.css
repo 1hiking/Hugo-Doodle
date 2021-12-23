@@ -195,6 +195,17 @@ body {
   min-height: 100vh;
 }
 
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+nav > a {
+  font-size: 20px;
+}
+
 body > header {
   text-align: center;
 }

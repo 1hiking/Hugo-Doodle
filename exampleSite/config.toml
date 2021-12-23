@@ -19,6 +19,12 @@ name = "About"
 url = "/about/"
 weight = 10
 
+[[menu.main]]
+homepage = "Posts"
+name = "Posts"
+url = "/post/"
+weight = 10
+
 [taxonomies]
 category = "categories"
 series = "series"

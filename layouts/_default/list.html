@@ -1,1 +1,15 @@
-{{- define "main" }} {{ end }}
+{{- define "main" }}
+<div class="List">
+  <h2>{{.Title}}</h2>
+  {{ .Content }}
+
+  <div class="list-items">
+    {{range.Pages}} {{/* TODO weird space between some elements */}}
+    <span>
+      <a href="{{.RelPermalink}}"> {{.Title}}</a>
+      <p>{{ .Description }}</p>
+    </span>
+    {{end}}
+  </div>
+</div>
+{{ end }}
