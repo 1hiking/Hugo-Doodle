@@ -1,6 +1,6 @@
 DefaultContentLanguage = "en"
-baseURL = "https://gohugo.io"
-copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
+baseURL = "https://Hugo-Doodle.netlify.com"
+copyright = "Copyright © 2008-2019, Steve Francia and the Hugo Authors; all rights reserved."
 enableInlineShortcodes = true
 languageCode = "en-us"
 paginate = 3
