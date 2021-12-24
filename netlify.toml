@@ -1,5 +1,5 @@
 [build]
-command = "cd exampleSite && hugo --minify --themesDir ../.."
+command = "cd exampleSite && hugo --minify --themesDir ../"
 publish = "exampleSite/public"
 [build.environment]
 HUGO_BASEURL = "https://Hugo-Doodle.netlify.app"
