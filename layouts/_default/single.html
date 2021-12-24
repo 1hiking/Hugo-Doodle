@@ -1,1 +1,4 @@
-{{- define "main" }} {{- .Content }} {{ end }}
+{{- define "main" }}
+<p>Made by: {{ .Params.author | default .Site.Author.name }}</p>
+<hr />
+{{- .Content }} {{ end }}

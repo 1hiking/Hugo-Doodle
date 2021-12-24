@@ -1,5 +1,4 @@
 DefaultContentLanguage = "en"
-author = "Steve Francia"
 baseURL = "https://gohugo.io"
 copyright = "Copyright © 2008–2019, Steve Francia and the Hugo Authors; all rights reserved."
 enableInlineShortcodes = true
@@ -10,6 +9,10 @@ title = "Hugo-Doodle"
 # See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
 ignoreErrors = ["error-remote-getjson"]
 theme = "Hugo-Doodle"
+
+[author]
+email = "John Doe@example.com"
+name = "John Doe"
 
 [menu]
 
