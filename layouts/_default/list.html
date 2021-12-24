@@ -1,15 +1,18 @@
 {{- define "main" }}
 <div class="List">
-  <h2>{{.Title}}</h2>
-  {{ .Content }}
+  <h2>{{- .Title }}</h2>
+  {{- .Content }}
 
   <div class="list-items">
-    {{range.Pages}} {{/* TODO weird space between some elements */}}
+    {{ range.Pages }}
     <span>
-      <a href="{{.RelPermalink}}"> {{.Title}}</a>
-      <p>{{ .Description }}</p>
+      <div class="list-title">
+        <a href="{{.RelPermalink}}"> {{.Title}}</a>
+        <time>{{- .Date | time.Format ":date_full" }}</time>
+      </div>
+      <p>{{- .Description }}</p>
     </span>
-    {{end}}
+    {{ end }}
   </div>
 </div>
 {{ end }}

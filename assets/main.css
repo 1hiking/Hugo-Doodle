@@ -216,8 +216,14 @@ body > footer {
   top: 100vh;
 }
 
+.list-title > time::before {
+  content: "- ";
+}
+
 .error404 {
   text-align: center;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Short+Stack&display=swap");
+@font-face {
+  font-family: "Short Stack";
+  src: url("/fonts/Short_Stack/ShortStack-Regular.ttf");
+}
