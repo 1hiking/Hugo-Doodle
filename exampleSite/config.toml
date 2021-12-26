@@ -1,5 +1,5 @@
 DefaultContentLanguage = "en"
-baseURL = "https://Hugo-Doodle.netlify.com"
+baseURL = "https://Hugo-Doodle.netlify.app"
 copyright = "Copyright © 2008-2019, Steve Francia and the Hugo Authors; all rights reserved."
 enableInlineShortcodes = true
 languageCode = "en-us"
