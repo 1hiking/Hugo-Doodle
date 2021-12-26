@@ -4,10 +4,25 @@
     alt="A drawing of a simple human figure"
     style="border: none"
   />
-  <nav>
-    <a href="{{ .Site.BaseURL }}">{{- .Site.Title }}</a>
-    {{ range .Site.Menus.main.ByWeight}} {{ .Pre }}
-    <a href="{{- .URL }}" title="{{- .Title }}">{{- .Name -}}</a>{{ .Post }} {{
-    end }}
-  </nav>
+  {{ with .Params.categories }}
+  <div class="doodle-border">
+    <a href="/categories">Categories:</a>
+    {{ range . }}
+    <a href="/categories/{{- . | lower }}">[{{- . }}]</a> {{ end }}
+  </div>
+  {{ end }} {{ with .Params.tags}}
+  <div class="doodle-border">
+    <a href="/tags">Tags:</a> {{ range . }}
+    <a href="/tags/{{- . | lower }}">[{{- . }}]</a> {{ end }}
+  </div>
+  {{ end }}
+
+  <div class="doodle-border">
+    <nav>
+      <a href="{{ .Site.BaseURL }}">{{- .Site.Title }}</a>
+      {{ range .Site.Menus.main.ByWeight}} {{ .Pre }}
+      <a href="{{- .URL }}" title="{{- .Title }}">{{- .Name -}}</a>{{ .Post }}
+      {{ end }}
+    </nav>
+  </div>
 </header>
