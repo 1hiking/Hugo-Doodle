@@ -200,14 +200,11 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  text-align: center;
 }
 
 nav > a {
   font-size: 20px;
-}
-
-body > header {
-  text-align: center;
 }
 
 body > footer {
