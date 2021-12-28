@@ -5,13 +5,13 @@
 
   <div class="list-items">
     {{ range.Pages }}
-    <span>
-      <div class="list-title">
+    <ul>
+      <li>
         <a href="{{.RelPermalink}}"> {{.Title}}</a>
         <time>{{- .Date | time.Format ":date_full" }}</time>
-      </div>
+      </li>
       <p>{{- .Description }}</p>
-    </span>
+    </ul>
     {{ end }}
   </div>
 </div>

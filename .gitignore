@@ -1,3 +1,4 @@
 exampleSite/public
 exampleSite/_gen
-.hugo_build.lock
+exampleSite/.hugo_build.lock
+exampleSite/resources/

@@ -1,0 +1,34 @@
+<header>
+  <div class="container-title-icon">
+    <img
+      src="/images/figure.webp"
+      alt="A drawing of a simple human figure"
+      style="border: none"
+    />
+    <div class="site-title">
+      <a href="{{ .Site.BaseURL }}">{{- .Site.Title }}</a>
+    </div>
+  </div>
+  <div class="container-taxonomy-menu">
+    {{ with .Params.categories }}
+    <div class="doodle-border">
+      <a href="/categories">Categories:</a>
+      {{ range . }}
+      <a href="/categories/{{- . | lower }}">[{{- . }}]</a> {{ end }}
+    </div>
+    {{ end }} {{ with .Params.tags}}
+    <div class="doodle-border">
+      <a href="/tags">Tags:</a> {{ range . }}
+      <a href="/tags/{{- . | lower }}">[{{- . }}]</a> {{ end }}
+    </div>
+    {{ end }}
+
+    <div class="doodle-border">
+      <nav>
+        {{ range .Site.Menus.main.ByWeight}} {{ .Pre }}
+        <a href="{{- .URL }}" title="{{- .Title }}">{{- .Name -}}</a>{{ .Post }}
+        {{ end }}
+      </nav>
+    </div>
+  </div>
+</header>

@@ -11,9 +11,9 @@ ignoreErrors = ["error-remote-getjson"]
 theme = "Hugo-Doodle"
 themesdir = "../.."
 
-[author]
-email = "John Doe@example.com"
-name = "John Doe"
+[params]
+description = "Hugo-Doodle is a playful and simple Hugo theme for bloggers and writers alike"
+footerText = "Nice footer"
 
 [menu]
 
@@ -35,29 +35,22 @@ series = "series"
 tag = "tags"
 
 [privacy]
-
 [privacy.vimeo]
 disabled = false
 simple = true
-
 [privacy.twitter]
 disabled = false
 enableDNT = true
 simple = true
-
 [privacy.instagram]
 disabled = false
 simple = true
-
 [privacy.youtube]
 disabled = false
 privacyEnhanced = true
-
 [services]
-
 [services.instagram]
 disableInlineCSS = true
-
 [services.twitter]
 disableInlineCSS = true
 

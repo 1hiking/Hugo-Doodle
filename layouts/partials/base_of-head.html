@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  {{if .IsPage }}
+  <meta property="og:title" content="{{- .Title }} - {{ .Site.Title }}" />
+  <title>{{- .Title }} - {{ .Site.Title }}</title>
+  <meta property="og:description" content="{{- .Description}}" />
+  <meta name="description" content="{{- .Description}}" />
+  {{ else }}
+  <meta property="og:title" content="{{ .Site.Title }}" />
+  <title>{{ .Site.Title }}</title>
+  <meta name="description" content="{{- .Site.Params.Description}}">
+  {{ end }}
+  <meta property="og:url" content="{{- .Permalink}}" />
+  {{$style := resources.Get "main.css"}} {{$style := $style | minify}}
+  <link rel="stylesheet" href="{{$style.RelPermalink}}" />
+  {{partial "head_favicon" . }}
+</head>

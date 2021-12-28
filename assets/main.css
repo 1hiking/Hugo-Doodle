@@ -199,18 +199,53 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 6px;
   align-items: flex-end;
   text-align: center;
+}
+
+.container-title-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.container-title-icon > .site-title {
+  font-size: 30px;
+}
+
+.container-taxonomy-menu {
+  display: flex;
+  flex-direction: row;
 }
 
 nav > a {
   font-size: 20px;
 }
 
-body > footer {
-  text-align: center;
+footer {
+  display: flex;
+  justify-content: center;
   position: sticky;
   top: 100vh;
+}
+
+footer::before {
+  display: flex;
+  content: "";
+  background-image: url("/svg/star.svg");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+
+footer::after {
+  display: flex;
+  content: "";
+  background-image: url("/svg/star.svg");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .list-title > time::before {

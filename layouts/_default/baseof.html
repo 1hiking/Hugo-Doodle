@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{.Site.LanguageCode}}">
-  {{- partial "head.html" . -}}
+  {{- partial "base_of-head.html" . -}}
   <body class="doodle">
-    {{- partial "header.html" . -}}
+    {{- partial "base_of-header.html" . -}}
     <div class="doodle-border">
       <main>{{- block "main" . }}{{- end }}</main>
     </div>
-    {{- partial "footer.html" . -}}
+    {{- partial "base_of-footer.html" . -}}
   </body>
 </html>
