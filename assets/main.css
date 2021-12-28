@@ -1,6 +1,6 @@
 /* Doodle CSS
  * https://github.com/chr15m/doodle-css
- * Slightly modified by 1hiking to account for paths
+ * Slightly modified by 1hiking to account for paths and unused elements
  */
 
 .doodle * {
@@ -12,15 +12,9 @@
   color: #3c3c3c;
 }
 
-.doodle input,
-.doodle textarea,
 .doodle table,
 .doodle img {
   max-width: 100%;
-}
-
-.doodle fieldset * {
-  max-width: calc(100vw - 100px);
 }
 
 .doodle table {
@@ -45,7 +39,7 @@
 .doodle textarea {
   border-style: solid;
   border-width: 10px 10px 10px 10px;
-  border-image: url(/svg/border.svg) 10 10 10 10 stretch stretch;
+  border-image: url(/svg/border_op.svg) 10 10 10 10 stretch stretch;
 }
 
 .doodle .border,
@@ -53,22 +47,6 @@
   border-style: solid;
   border-width: 10px 10px 10px 10px;
   border-image: url(/svg/button.svg) 10 10 10 10 stretch stretch;
-}
-
-.doodle button,
-.doodle input,
-.doodle select {
-  border-style: solid;
-  border-width: 10px 10px 10px 10px;
-  border-image: url(/svg/button.svg) 10 10 10 10 stretch stretch;
-}
-
-.doodle button {
-  text-align: center;
-}
-
-.doodle input[type="color"] {
-  min-height: 1.5em;
 }
 
 .doodle hr {
@@ -80,7 +58,7 @@
 .doodle blockquote {
   border-left-style: solid;
   border-width: 0px 6px 3px 6px;
-  border-image: url(/svg/bq.svg) 0 6 3 6 stretch stretch;
+  border-image: url(/svg/bq_op.svg) 0 6 3 6 stretch stretch;
   padding-left: 0.5em;
   border-right-width: 0px;
 }
@@ -114,70 +92,6 @@
   border-style: solid;
   border-width: 3px 3px 3px 3px;
   border-image: url(/svg/button.svg) 3 3 3 3 stretch stretch;
-}
-
-.doodle select {
-  -webkit-appearance: none;
-  appearance: none;
-  padding-right: 1.5em;
-  background: url(/svg/caret.svg) no-repeat right transparent;
-  background-position-x: calc(100% - 10px);
-}
-
-.doodle select[multiple] {
-  background: none;
-  padding: 0px;
-}
-
-.doodle button,
-.doodle textarea,
-.doodle input,
-.doodle select {
-  background-color: unset;
-  font-family: "Short Stack", cursive;
-  font-size: 1em;
-  color: #3c3c3c;
-}
-
-.doodle input[type="checkbox"] {
-  border-width: 6px 6px 6px 6px;
-  border-image: url(/svg/checkbox.svg) 6 6 6 6 stretch stretch;
-}
-
-.doodle input[type="radio"] {
-  border-width: 16px 16px 16px 16px;
-  border-image: url(/svg/radio.svg) 16 16 16 16 stretch stretch;
-}
-
-.doodle input[type="checkbox"],
-.doodle input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
-  outline: 0;
-  background: transparent;
-  width: 1.5em;
-  height: 1.5em;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.doodle input[type="checkbox"]:after,
-.doodle input[type="radio"]:after {
-  font-size: 1.25em;
-  content: " ";
-  margin-bottom: -0.25em;
-}
-
-.doodle input[type="checkbox"]:disabled:after,
-.doodle input[type="radio"]:disabled:after {
-  content: "-";
-  color: grey;
-}
-
-.doodle input[type="checkbox"]:checked:after,
-.doodle input[type="radio"]:checked:after {
-  content: "*";
 }
 
 /* Made by 1hiking */
@@ -223,29 +137,39 @@ nav > a {
   font-size: 20px;
 }
 
+.List > h2 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.List > h2::before {
+  display: flex;
+  content: "";
+  background-image: url("/svg/star2_op.svg");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+
+.List > h2::after {
+  display: flex;
+  content: "";
+  background-image: url("/svg/star2_op.svg");
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+}
+
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: sticky;
   top: 100vh;
 }
 
-footer::before {
-  display: flex;
-  content: "";
-  background-image: url("/svg/star.svg");
-  background-size: 40px 40px;
-  height: 40px;
-  width: 40px;
-}
-
-footer::after {
-  display: flex;
-  content: "";
-  background-image: url("/svg/star.svg");
-  background-size: 40px 40px;
-  height: 40px;
-  width: 40px;
+footer > p {
+  margin: 0 auto;
 }
 
 .list-title > time::before {
