@@ -1,5 +1,4 @@
 [build]
-command = "hugo -s exampleSite --minify --gc"
 publish = "exampleSite/public"
 [build.environment]
 HUGO_BASEURL = "https://Hugo-Doodle.netlify.app"
