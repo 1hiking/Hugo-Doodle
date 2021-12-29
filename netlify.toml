@@ -10,17 +10,17 @@ HUGO_VERSION = "0.90.1"
 for = "/*"
 [headers.values]
 Content-Security-Policy = """
-default-src 'self',
-font-src 'self',
-frame-ancestors 'none',
-frame-src 'self' https://www.youtube-nocookie.com https://i.vimeocdn.com,
-img-src 'self' https://i.vimeocdn.com,
+default-src 'self'
+font-src 'self'
+frame-ancestors 'none'
+frame-src 'self' https://www.youtube-nocookie.com https://i.vimeocdn.com
+img-src 'self' https://i.vimeocdn.com
 script-src 'strict-dynamic' localhost:1313 https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js,
-style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSySzDc=',
-base-uri 'none',
+style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSySzDc='
+base-uri 'none'
 form-action 'none',
-upgrade-insecure-requests,
-navigate-to 'none',
+upgrade-insecure-requests
+navigate-to 'none'
 """
 Permissions-Policy = "interest-cohort=()"
 Referrer-Policy = 'strict-origin-when-cross-origin'
