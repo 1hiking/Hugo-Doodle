@@ -8,21 +8,9 @@ HUGO_VERSION = "0.90.1"
 [[headers]]
 for = "/*"
 [headers.values]
-Content-Security-Policy = "default-src 'self'; font-src 'self'; frame-ancestors 'none'; script-src 'strict-dynamic'; style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSySzDc=' 'sha256-0QfFFTbm+2DVhqN0XgVnIGq6q7rwqyq8s98SUhMornQ=' 'sha256-SCo/lfQsawYfVe1OclU1KhpRKc5LJhdh8I5K3sNHyKI='; base-uri 'none'; form-action 'none'; upgrade-insecure-requests; navigate-to 'none'"
-Permissions-Policy = "interest-cohort=()"
+Content-Security-Policy = "default-src https: ; object-src 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests; navigate-to 'none'"
+Permissions-Policy = "interest-cohort=(), geolocation=(), midi=(), notifications=(), push=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), vibrate=(), payment=()"
 Referrer-Policy = 'strict-origin-when-cross-origin'
 X-Content-Type-Options = 'nosniff'
 X-Frame-Options = 'DENY'
 X-XSS-Protection = '0'
-[[headers]]
-for = "/post/math-typesetting/index.html"
-[headers.values]
-Content-Security-Policy = "font-src 'self' 'unsafe-inline'; script-src 'strict-dynamic' https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js; style-src 'self' 'unsafe-hashes' 'sha256-XxHwtzDOK3nF5/+f9R9HLY8xBJoJX4PlHbjJ0PdpZQQ='"
-[[headers]]
-for = "/post/emoji-support/index.html"
-[headers.values]
-Content-Security-Policy = "style-src 'self' 'unsafe-hashes' 'sha256-SCo/lfQsawYfVe1OclU1KhpRKc5LJhdh8I5K3sNHyKI='"
-[[headers]]
-for = "/post/rich-content/index.html"
-[headers.values]
-Content-Security-Policy = "img-src 'self' https://i.vimeocdn.com; frame-src 'self' https://www.youtube-nocookie.com https://i.vimeocdn.com; style-src 'self' 'unsafe-hashes' 'sha256-yr4ynM8yLb/udBw5AwxToDRvEFICAsflRvlEtBuXiwE=' 'sha256-YQmgcK0jsCe8fDEhfo582Xe+OKm/7ByuuVbsB7UftiU=' 'sha256-gv28nbG5x+JNE1IQp4dccaLeq4Bee0w0fqJWsQOY6Gc='"
