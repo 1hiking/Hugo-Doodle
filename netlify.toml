@@ -6,10 +6,10 @@ HUGO_BASEURL = "https://Hugo-Doodle.netlify.app"
 HUGO_THEME = "Hugo-Doodle"
 HUGO_VERSION = "0.90.1"
 
-[server]
-[[server.headers]]
+
+[[headers]]
 for = "/*"
-[server.headers.values]
+[headers.values]
 Content-Security-Policy = """
 default-src 'self';
 font-src 'self';
@@ -28,9 +28,9 @@ Referrer-Policy = 'strict-origin-when-cross-origin'
 X-Content-Type-Options = 'nosniff'
 X-Frame-Options = 'DENY'
 X-XSS-Protection = '0'
-[[server.headers]]
+[[headers]]
 for = "/post/math-typesetting/index.html"
-[server.headers.values]
+[headers.values]
 Content-Security-Policy = """
 font-src 'self' 'unsafe-inline';
 script-src 'self';
