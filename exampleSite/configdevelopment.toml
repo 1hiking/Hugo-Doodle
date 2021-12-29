@@ -5,27 +5,15 @@
 for = "/*"
 [server.headers.values]
 Content-Security-Policy = """
-default-src 'self';
-font-src 'self';
-frame-ancestors 'none';
-frame-src 'self' https://www.youtube-nocookie.com https://i.vimeocdn.com;
-img-src 'self' https://i.vimeocdn.com;
-script-src 'strict-dynamic' localhost:1313 https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/auto-render.min.js;
-style-src 'self' 'unsafe-hashes' 'sha256-uZZWz17a29ItP5ba+GPU37fLKjLXV9FhFo3EYSySzDc=';
+default-src https: 'unsafe-inline';
+object-src 'none';
 base-uri 'none';
 form-action 'none';
 upgrade-insecure-requests;
 navigate-to 'none';
 """
-Permissions-Policy = "interest-cohort=()"
+Permissions-Policy = "interest-cohort=(), geolocation=(), midi=(), notifications=(), push=(), microphone=(), camera=(), magnetometer=(), gyroscope=(), vibrate=(), payment=()"
 Referrer-Policy = 'strict-origin-when-cross-origin'
 X-Content-Type-Options = 'nosniff'
 X-Frame-Options = 'DENY'
 X-XSS-Protection = '0'
-[[server.headers]]
-for = "/post/math-typesetting/index.html"
-[server.headers.values]
-Content-Security-Policy = """
-font-src 'self' 'unsafe-inline';
-script-src 'self';
-"""
