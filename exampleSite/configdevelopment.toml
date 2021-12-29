@@ -1,9 +1,4 @@
-[build]
-publish = "exampleSite/public"
-[build.environment]
-HUGO_BASEURL = "https://Hugo-Doodle.netlify.app"
-HUGO_THEME = "Hugo-Doodle"
-HUGO_VERSION = "0.90.1"
+# For development only
 
 [server]
 [[server.headers]]

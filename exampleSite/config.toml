@@ -15,8 +15,6 @@ themesdir = "../.."
 description = "Hugo-Doodle is a playful and simple Hugo theme for bloggers and writers alike"
 footerText = "Nice footer"
 
-
-
 [menu]
 
 [[menu.main]]
@@ -58,3 +56,9 @@ disableInlineCSS = true
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[markup]
+
+[markup.highlight]
+noClasses = true
+style = "solarized-light"
