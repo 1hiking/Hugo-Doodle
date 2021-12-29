@@ -5,7 +5,7 @@
 for = "/*"
 [server.headers.values]
 Content-Security-Policy = """
-default-src https: ;
+default-src https: 'unsafe-inline';
 object-src 'none';
 base-uri 'none';
 form-action 'none';
