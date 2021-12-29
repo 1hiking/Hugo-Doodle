@@ -4,15 +4,16 @@
   {{- .Content }}
 
   <div class="list-items">
-    {{ range.Pages }}
     <ul>
+      {{ range.Pages }}
       <li>
         <a href="{{.RelPermalink}}"> {{.Title}}</a>
         <time>{{- .Date | time.Format ":date_full" }}</time>
       </li>
       <p>{{- .Description }}</p>
+
+      {{ end }}
     </ul>
-    {{ end }}
   </div>
 </div>
 {{ end }}
