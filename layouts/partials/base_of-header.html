@@ -11,15 +11,26 @@
   </div>
   <div class="container-taxonomy-menu">
     {{ with .Params.categories }}
-    <div class="doodle-border">
+    <div class="doodle-border menu">
       <a href="/categories">Categories:</a>
-      {{ range . }}
-      <a href="/categories/{{- . | lower }}">[{{- . }}]</a> {{ end }}
+      <ul>
+        {{ range . }}
+        <li>
+          <a href="/categories/{{- . | lower }}">{{- . }}</a>
+        </li>
+        {{ end }}
+      </ul>
     </div>
     {{ end }} {{ with .Params.tags}}
-    <div class="doodle-border">
-      <a href="/tags">Tags:</a> {{ range . }}
-      <a href="/tags/{{- . | lower }}">[{{- . }}]</a> {{ end }}
+    <div class="doodle-border menu">
+      <a href="/tags">Tags:</a>
+      <ul>
+        {{ range . }}
+        <li>
+          <a href="/tags/{{- . | lower }}">{{- . }}</a>
+        </li>
+        {{ end }}
+      </ul>
     </div>
     {{ end }}
 

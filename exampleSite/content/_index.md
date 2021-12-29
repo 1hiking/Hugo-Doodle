@@ -4,10 +4,16 @@ author = "1hiking"
 
 # Hugo-Doodle
 
-A simple hand drawn HTML/CSS theme made by [Chris McCormick](https://chr15m.github.io/DoodleCSS/), now powered and automated with [Hugo](https://gohugo.io), made by [1hiking](https://github.com/1hiking).
+A simple hand drawn HTML/CSS theme made by [Chris McCormick](https://chr15m.github.io/DoodleCSS/), now powered and automated with [Hugo](https://gohugo.io), made by [1hiking](https://github.com/1hiking) for bloggers and interested alike.
 
-- Hugo-Doodle is 100% Javascript free. All created with HTML/CSS.
+Features:
 
-- Use it on your favorite hosting provider (Netlify, Github Pages, Cloudfare).
+- It's cute!
+- 100% made with HTML & CSS
+- Easy to host on your favorite provider (Netlify, GH Pages, Cloudfare, etc)
+- Support for OpenGraph
 
-- todo: add epic stuff
+## Credits
+
+- [DoodleCSS](https://github.com/chr15m/DoodleCSS) was made by Chris McCormick et alii.
+- [exampleSite](https://github.com/gohugoio/hugoBasicExample) was made by Steve Francia et alii.
