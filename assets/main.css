@@ -52,7 +52,7 @@
 .doodle hr {
   border-style: solid;
   border-width: 0px 3px 6px 3px;
-  border-image: url(/svg/hr.svg) 0 3 6 3 stretch stretch;
+  border-image: url(/svg/hr_op.svg) 0 3 6 3 stretch stretch;
 }
 
 .doodle blockquote {
@@ -111,9 +111,10 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  gap: 6px;
+  gap: 10px;
   align-items: flex-end;
   text-align: center;
 }
@@ -131,6 +132,17 @@ header {
 .container-taxonomy-menu {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
+}
+
+.doodle-border.menu > ul {
+  display: inherit;
+  padding: inherit;
+  margin: inherit;
+}
+
+.doodle-border.menu > ul li {
+  list-style-type: none !important;
 }
 
 nav > a {
@@ -172,13 +184,14 @@ footer > p {
   margin: 0 auto;
 }
 
-.list-title > time::before {
+li > time::before {
   content: "- ";
 }
 
 .error404 {
   text-align: center;
 }
+
 @font-face {
   font-family: "Short Stack";
   src: url("/fonts/Short_Stack/ShortStack-Regular.ttf");
