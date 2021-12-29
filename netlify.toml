@@ -5,3 +5,11 @@ publish = "exampleSite/public"
 HUGO_BASEURL = "https://Hugo-Doodle.netlify.app"
 HUGO_THEME = "Hugo-Doodle"
 HUGO_VERSION = "0.90.1"
+
+[[headers]]
+for = "/*"
+[headers.values]
+Content-Security-Policy = "default-src 'self'; font-src 'self'; frame-src 'none'; image-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'none'; upgrade-insecure-requests; navigate-to 'none'; sandbox allow-same-origin"
+X-Content-Type-Options = "nosniff"
+X-Frame-Options = "DENY"
+X-XSS-Protection = "0"
