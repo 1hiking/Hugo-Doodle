@@ -1,5 +1,7 @@
 # Hugo-Doodle
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/991da8ca-4a3e-4d79-ac1f-73845019e7fa/deploy-status)](https://app.netlify.com/sites/hugo-doodle/deploys)
+
 A simple hand drawn HTML/CSS theme made by [Chris McCormick](https://chr15m.github.io/DoodleCSS/), now powered and automated with [Hugo](https://gohugo.io), made by [1hiking](https://github.com/1hiking) for bloggers and interested alike.
 
 Features:
