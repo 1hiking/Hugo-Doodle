@@ -7,11 +7,12 @@
     <ul>
       {{ range.Pages }}
       <li>
-        <a href="{{.RelPermalink}}"> {{.Title}}</a>
-        <time>{{- .Date | time.Format ":date_full" }}</time>
+        <article>
+          <a href="{{.RelPermalink}}"> {{.Title}}</a>
+          <time datetime="{{- .Date }}">{{- .Date | time.Format ":date_full" }}</time>
+          <p>{{- .Description }}</p>
+        </article>
       </li>
-      <p>{{- .Description }}</p>
-
       {{ end }}
     </ul>
   </div>

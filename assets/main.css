@@ -184,7 +184,7 @@ footer > p {
   margin: 0 auto;
 }
 
-li > time::before {
+article > time::before {
   content: "- ";
 }
 
