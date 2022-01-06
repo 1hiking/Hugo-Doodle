@@ -1,4 +1,5 @@
 {{- define "main" }}
-<p>Made by: {{ .Params.author | default .Site.Author.name }}</p>
+{{ partial "single_article-data.html" . }}
 <hr />
 {{- .Content }} {{ end }}
+

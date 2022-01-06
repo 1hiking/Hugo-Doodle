@@ -1,0 +1,6 @@
+<p>Made by: {{ .Params.author | default .Site.Author.name }}</p>
+<p> Written: <time datetime="{{- .Date }}"> {{- .Date | time.Format ":date_full" }}    
+{{ if ne .Lastmod .Date }}
+| Edited: <time datetime="{{- .Lastmod }}"> {{- .Lastmod | time.Format ":date_full"}} </time>
+{{ end }}
+</p>
