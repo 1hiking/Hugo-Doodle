@@ -149,6 +149,19 @@ nav > a {
   font-size: 20px;
 }
 
+div.toc {
+  background-color: bisque;
+  border-radius: 5px;
+}
+
+div.toc > nav#TableOfContents {
+  display: none;
+}
+
+div.toc:hover > nav#TableOfContents {
+  display: inherit;
+}
+
 .List > h2 {
   display: flex;
   align-items: flex-end;
