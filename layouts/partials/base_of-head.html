@@ -9,7 +9,8 @@
   {{ else }}
   <meta property="og:title" content="{{ .Site.Title }}" />
   <title>{{ .Site.Title }}</title>
-  <meta name="description" content="{{- .Site.Params.Description}}">
+  <meta name="description" content="{{- .Site.Params.Description}}" />
+  <meta property="og:description" content="{{- .Site.Params.Description}}" />
   {{ end }}
   <meta property="og:url" content="{{- .Permalink}}" />
   {{$style := resources.Get "main.css"}} {{$style := $style | minify}}
