@@ -149,17 +149,12 @@ nav > a {
   font-size: 20px;
 }
 
-div.toc {
-  background-color: bisque;
-  border-radius: 5px;
+details {
+  user-select: none;
 }
 
-div.toc > nav#TableOfContents {
-  display: none;
-}
-
-div.toc:hover > nav#TableOfContents {
-  display: inherit;
+summary {
+  cursor: pointer;
 }
 
 .List > h2 {
